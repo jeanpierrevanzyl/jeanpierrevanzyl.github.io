@@ -1,2 +1,6 @@
-# theme: jekyll-theme-minimal
-remote_theme: y7kim/agency-jekyll-theme
+theme: jekyll-theme-minimal
+# remote_theme: y7kim/agency-jekyll-theme
+title: Welcome
+description: Personal webpage of Jean-Pierre van Zyl
+markdown: kramdown
+logo: [images/test.png]
