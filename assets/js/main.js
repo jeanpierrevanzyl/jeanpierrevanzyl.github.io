@@ -200,3 +200,12 @@ $( document ).ready(function() {
      return false;
   });
 });
+
+function hideshowDiv() {
+  var x = document.getElementById("hidden-div");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+} 
