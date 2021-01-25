@@ -201,11 +201,26 @@ $( document ).ready(function() {
   });
 });
 
-function hideshowDiv() {
-  var x = document.getElementById("hidden-div");
-  if (x.style.display === "none") {
-    x.style.display = "block";
-  } else {
+function hideshowUndergrad() {
+  var x = document.getElementById("undergrad-hidden-div");
+  var y = document.getElementById("undergrad-hyperlink")
+  if (x.style.display === "block") {
     x.style.display = "none";
+    y.textContent = "View Degree"
+  } else {
+    x.style.display = "block";
+    y.textContent = "Close Degree"
+  }
+} 
+
+function hideshowHonours() {
+  var x = document.getElementById("honours-hidden-div");
+  var y = document.getElementById("honours-hyperlink")
+  if (x.style.display === "block") {
+    x.style.display = "none";
+    y.textContent = "View Degree"
+  } else {
+    x.style.display = "block";
+    y.textContent = "Close Degree"
   }
 } 
