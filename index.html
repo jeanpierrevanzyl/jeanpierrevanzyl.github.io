@@ -44,7 +44,6 @@
 
   <!-- ======= Header ======= -->
   <header id="header">
-    <script src="header.js"></script>
   </header>
   <!-- End Header -->
 
@@ -354,8 +353,8 @@
         </div>
 
         <div class="row">
-
-          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
+          <!-- Start Publications -->
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up">
             <div class="icon"><i class="bx bxs-book"></i></div>
             <h4 class="title"><a href="assets/documents/RiSBPSO.pdf" target="_blank">Rule Induction Using Set-Based Particle Swarm Optimisation</a></h4>
             <p class="description">
@@ -364,7 +363,7 @@
             </p>
           </div>
 
-          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up">
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
             <div class="icon"><i class="bx bxs-book"></i></div>
             <h4 class="title"><a href="assets/documents/SBPSO_for_polynomial_induction.pdf" target="_blank">Polynomial Approximation Using Set-Based Particle Swarm Optimization</a></h4>
             <p class="description">The SBPSO is an adaptation of the standard PSO for problems in a discrete search
@@ -615,8 +614,8 @@
 
   <!-- ======= Footer ======= -->
   <footer id="footer">
-    <script src="footer.js"></script>
-  </footer><!-- End  Footer -->
+  </footer>
+  <!-- End  Footer -->
 
   <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
 
@@ -635,6 +634,11 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <script>
+    $("#header").load("header.html");
+    $("#footer").load("footer.html");
+  </script>
 
 </body>
 

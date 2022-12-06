@@ -42,7 +42,6 @@
 
   <!-- ======= Header ======= -->
   <header id="header">
-    <script src="header.js"></script>
   </header>
   <!-- End Header -->
 
@@ -101,8 +100,8 @@
 
   <!-- ======= Footer ======= -->
   <footer id="footer">
-    <script src="footer.js"></script>
-  </footer><!-- End  Footer -->
+  </footer>
+  <!-- End  Footer -->
 
   <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
 
@@ -121,6 +120,11 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <script>
+    $("#header").load("header.html");
+    $("#footer").load("footer.html");
+  </script>
 
 </body>
 
