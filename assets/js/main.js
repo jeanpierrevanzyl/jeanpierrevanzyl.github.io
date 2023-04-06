@@ -223,4 +223,16 @@ function hideshowHonours() {
     x.style.display = "block";
     y.textContent = "Close Degree"
   }
+}
+
+function hideshowMasters() {
+  var x = document.getElementById("masters-hidden-div");
+  var y = document.getElementById("masters-hyperlink")
+  if (x.style.display === "block") {
+    x.style.display = "none";
+    y.textContent = "View Degree"
+  } else {
+    x.style.display = "block";
+    y.textContent = "Close Degree"
+  }
 } 
