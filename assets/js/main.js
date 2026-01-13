@@ -4,7 +4,7 @@
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */
-!(function($) {
+!(function ($) {
   "use strict";
 
   // Hero typed
@@ -21,7 +21,7 @@
   }
 
   // Smooth scroll for the navigation menu and links with .scrollto classes
-  $(document).on('click', '.nav-menu a, .scrollto', function(e) {
+  $(document).on('click', '.nav-menu a, .scrollto', function (e) {
     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
       e.preventDefault();
       var target = $(this.hash);
@@ -48,7 +48,7 @@
   });
 
   // Activate smooth scroll on page load with hash links in the url
-  $(document).ready(function() {
+  $(document).ready(function () {
     if (window.location.hash) {
       var initial_nav = window.location.hash;
       if ($(initial_nav).length) {
@@ -60,12 +60,12 @@
     }
   });
 
-  $(document).on('click', '.mobile-nav-toggle', function(e) {
+  $(document).on('click', '.mobile-nav-toggle', function (e) {
     $('body').toggleClass('mobile-nav-active');
     $('.mobile-nav-toggle i').toggleClass('icofont-navigation-menu icofont-close');
   });
 
-  $(document).click(function(e) {
+  $(document).click(function (e) {
     var container = $(".mobile-nav-toggle");
     if (!container.is(e.target) && container.has(e.target).length === 0) {
       if ($('body').hasClass('mobile-nav-active')) {
@@ -79,10 +79,10 @@
   var nav_sections = $('section');
   var main_nav = $('.nav-menu, .mobile-nav');
 
-  $(window).on('scroll', function() {
+  $(window).on('scroll', function () {
     var cur_pos = $(this).scrollTop() + 200;
 
-    nav_sections.each(function() {
+    nav_sections.each(function () {
       var top = $(this).offset().top,
         bottom = top + $(this).outerHeight();
 
@@ -99,7 +99,7 @@
   });
 
   // Back to top button
-  $(window).scroll(function() {
+  $(window).scroll(function () {
     if ($(this).scrollTop() > 100) {
       $('.back-to-top').fadeIn('slow');
     } else {
@@ -107,7 +107,7 @@
     }
   });
 
-  $('.back-to-top').click(function() {
+  $('.back-to-top').click(function () {
     $('html, body').animate({
       scrollTop: 0
     }, 1500, 'easeInOutExpo');
@@ -121,8 +121,8 @@
   });
 
   // Skills section
-  $('.skills-content').waypoint(function() {
-    $('.progress .progress-bar').each(function() {
+  $('.skills-content').waypoint(function () {
+    $('.progress .progress-bar').each(function () {
       $(this).css("width", $(this).attr("aria-valuenow") + '%');
     });
   }, {
@@ -130,13 +130,13 @@
   });
 
   // Porfolio isotope and filter
-  $(window).on('load', function() {
+  $(window).on('load', function () {
     var portfolioIsotope = $('.portfolio-container').isotope({
       itemSelector: '.portfolio-item',
       layoutMode: 'fitRows'
     });
 
-    $('#portfolio-flters li').on('click', function() {
+    $('#portfolio-flters li').on('click', function () {
       $("#portfolio-flters li").removeClass('filter-active');
       $(this).addClass('filter-active');
 
@@ -147,25 +147,19 @@
     });
 
     // Initiate venobox (lightbox feature used in portofilo)
-    $(document).ready(function() {
+    $(document).ready(function () {
       $('.venobox').venobox();
     });
   });
 
   // Testimonials carousel (uses the Owl Carousel library)
   $(".testimonials-carousel").owlCarousel({
-    autoplay: true,
+    autoplay: false,
     dots: true,
     loop: true,
     responsive: {
       0: {
         items: 1
-      },
-      768: {
-        items: 2
-      },
-      900: {
-        items: 3
       }
     }
   });
@@ -186,53 +180,29 @@
       once: true
     });
   }
-  $(window).on('load', function() {
+  $(window).on('load', function () {
     aos_init();
   });
 
 })(jQuery);
 
 // Codepen stuff
-$( document ).ready(function() {
-  $('.trigger').click(function() {
-     $('.modal-wrapper').toggleClass('open');
+$(document).ready(function () {
+  $('.trigger').click(function () {
+    $('.modal-wrapper').toggleClass('open');
     $('.page-wrapper').toggleClass('blur');
-     return false;
+    return false;
   });
 });
 
-function hideshowUndergrad() {
-  var x = document.getElementById("undergrad-hidden-div");
-  var y = document.getElementById("undergrad-hyperlink")
-  if (x.style.display === "block") {
-    x.style.display = "none";
-    y.textContent = "View Degree"
-  } else {
-    x.style.display = "block";
-    y.textContent = "Close Degree"
-  }
-} 
-
-function hideshowHonours() {
-  var x = document.getElementById("honours-hidden-div");
-  var y = document.getElementById("honours-hyperlink")
-  if (x.style.display === "block") {
-    x.style.display = "none";
-    y.textContent = "View Degree"
-  } else {
-    x.style.display = "block";
-    y.textContent = "Close Degree"
-  }
+function toggleImage(element) {
+  const img = element.parentElement.querySelector('.floating-image');
+  $('.floating-image').not(img).removeClass('show-image');
+  img.classList.toggle("show-image");
 }
 
-function hideshowMasters() {
-  var x = document.getElementById("masters-hidden-div");
-  var y = document.getElementById("masters-hyperlink")
-  if (x.style.display === "block") {
-    x.style.display = "none";
-    y.textContent = "View Degree"
-  } else {
-    x.style.display = "block";
-    y.textContent = "Close Degree"
+$(document).click(function (e) {
+  if (!$(e.target).closest('.clickable-text').length) {
+    $('.floating-image').removeClass('show-image');
   }
-} 
+});
