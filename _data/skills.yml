@@ -1,0 +1,12 @@
+- name: "Particle Swarm Optimisation"
+  percentage: 90
+- name: "Genetic Programming"
+  percentage: 60
+- name: "Combinatorial Optimisation"
+  percentage: 85
+- name: "Neural Networks"
+  percentage: 80
+- name: "Rule Induction"
+  percentage: 80
+- name: "Quantum Mechanics"
+  percentage: 15

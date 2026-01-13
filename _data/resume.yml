@@ -1,0 +1,80 @@
+summary:
+  name: "Jean-Pierre van Zyl"
+  text: "Brief overview of experience"
+  cv_pdf: "/assets/documents/jvz-cv.pdf"
+  highlights:
+    - "Currently hold MSc in Computer Science"
+    - "Work experience consists of multiple internships"
+    - "Multiple years spent serving on student leadership"
+
+education:
+  - degree: "PhD in Computer Science (In progress)"
+    duration: "2023 - "
+    institution: "Stellenbosch University, Stellenbosch, RSA"
+    notes:
+      - "Currently studying under Professor A.P. Engelbrecht"
+  - degree: "Master of Science in Computer Science (Cum Laude)"
+    duration: "2021 - 2022"
+    institution: "Stellenbosch University, Stellenbosch, RSA"
+    image: "/assets/img/resume/masters.png"
+    notes:
+      - "Obtained Cum Laude"
+  - degree: "Bachelor of Science (Honours) in Computer Science (Cum Laude)"
+    duration: "2020 - 2020"
+    institution: "Stellenbosch University, Stellenbosch, RSA"
+    image: "/assets/img/resume/honours.png"
+    notes:
+      - "Obtained Cum Laude"
+  - degree: "Bachelor of Science in Mathematical Sciences (Computer Science)"
+    duration: "2017 - 2019"
+    institution: "Stellenbosch University, Stellenbosch, RSA"
+    image: "/assets/img/resume/undergrad.png"
+    notes:
+      - "Completed a BSc in Mathematical Sciences with a main stream in Computer Science"
+  - degree: "National Senior Certificate"
+    duration: "2012 - 2016"
+    institution: "Fairmont High School, Durbanville, RSA"
+    notes:
+      - "Obtained 6 distinctions"
+
+experience:
+  - title: "Junior Lecturer, Part-time"
+    duration: "2025 - 2026"
+    institution: "Stellenbosch University, Stellenbosch, RSA"
+    link: "https://www.ie.sun.ac.za/"
+    bullets:
+      - "Lecturing and student supervision"
+  - title: "Scholarship program"
+    duration: "2023"
+    institution: "BMW IT Hub, Pretoria, RSA"
+    link: "https://www.bmwithub.co.za/"
+    bullets:
+      - "PhD funded by BMW as a contractor for the IT Hub"
+  - title: "Teaching Assistant, Part-time"
+    duration: "2022 - 2024"
+    institution: "Stellenbosch University, Stellenbosch, RSA"
+    link: "https://www.ie.sun.ac.za/"
+    bullets:
+      - "Project marking and module adim"
+  - title: "Intern, Part-time"
+    duration: "Mar 2021 - Jun 2021"
+    institution: "Merlynn Intelligence Technologies, Centurion, RSA"
+    link: "https://www.merlynn-ai.com/"
+    bullets:
+      - "Merlynn is an artificial intelligence firm developing customized AI solutions, without the need for historical data."
+      - "Worked remotely while studying my MSc, contributed to expanding the capabilities of their AI systems."
+  - title: "Intern, vac work"
+    duration: "Jan 2021 - Feb 2021"
+    institution: "Polymorph Systems, Stellenbosch, RSA"
+    link: "https://www.polymorph.co.za/"
+    bullets:
+      - "Polymorph is a software solutions company with wide range of focus and experience across industries"
+      - "Worked as a part of the in-house R&D team which drove the expansion of the company's IoT work to include Computer Vision at the Edge"
+  - title: "Intern, vac work"
+    duration: "Nov 2020 - Dec 2020"
+    institution: "NMRQL Research, Stellenbosch, RSA"
+    link: "https://nmrql.com/"
+    bullets:
+      - "NRMQL is an AI-driven investment company using cutting-edge technology to disrupt the industry"
+      - "Position provided first introduction to the Fintech industry"
+      - "Contributed to the expansion of the set of tools used to trade securities"

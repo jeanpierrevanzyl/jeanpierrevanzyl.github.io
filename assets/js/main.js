@@ -136,6 +136,15 @@
       layoutMode: 'fitRows'
     });
 
+    // Specifically target and shuffle the Unrelated section
+    var $filmGrid = $('#film-grid').isotope({
+      itemSelector: '.portfolio-item',
+      layoutMode: 'fitRows'
+    });
+
+    // This command triggers the random shuffle on every load
+    $filmGrid.isotope('shuffle');
+
     $('#portfolio-flters li').on('click', function () {
       $("#portfolio-flters li").removeClass('filter-active');
       $(this).addClass('filter-active');

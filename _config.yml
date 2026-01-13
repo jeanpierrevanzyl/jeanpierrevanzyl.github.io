@@ -1,0 +1,21 @@
+# Site settings
+title: Jean-Pierre van Zyl
+description: PhD Student in AI & Machine Learning at Stellenbosch University.
+keywords: "Jean-Pierre van Zyl, Machine Learning, AI, Stellenbosch University, PhD, Computer Science Portfolio"
+url: "https://jeanpierrevanzyl.github.io"
+baseurl: ""
+
+social:
+  linkedin: "https://www.linkedin.com/in/jeanpierrevanzyl/"
+  github: "https://www.github.com/jeanpierrevanzyl/"
+  scholar: "https://scholar.google.com/citations?user=dAy6c40AAAAJ"
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
