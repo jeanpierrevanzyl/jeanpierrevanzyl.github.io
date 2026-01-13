@@ -1,0 +1,28 @@
+- name: "Andrea Mitchell"
+  project_title: "To Go Deep, Or Not To Go Deep"
+  summary: >
+    Deep learning models, characterised by their multilayered complexity and vast parameter counts, have
+    become the prevailing approach to image classification.
+    Yet, the widespread adoption of deep architectures often occurs without critical assessment of whether such complexity is necessary.
+    The study presented in this research assignment re-examines the assumption that deeper architectures are inherently superior. 
+    The investigation focuses on whether shallow neural networks, when supported by informed preprocessing, can achieve accuracy comparable to deep learning models while maintaining efficiency and interpretability.
+    Three benchmark datasets of increasing complexity — MNIST, Fashion MNIST, and CIFAR-10 — are used to evaluate the hypothesis of the study.
+    The study follows a structured, data-centric process which comprises exploratory data analysis, model-centric preprocessing, dataset-centric enhancement, and statistical validation.
+    Class-specific preprocessing pipelines are developed to address residual misclassification, and incorporates handcrafted features such as edge, texture, and colour descriptors that reflect the visual attributes most relevant to each dataset.
+    Across thirty independent runs, the optimised shallow networks achieve mean test accuraciesof 98.67% on MNIST, 88.16% on Fashion MNIST, and 78.44% on CIFAR-10.
+    Performance on MNIST and Fashion MNIST match that of reported deep learning baselines, while the CIFAR-10 results demonstrate that shallow architectures remain viable for complex datasets when supported by targeted preprocessing, feature engineering, and ensembling.
+    Statistical analyses confirm that improvements are significant and accompanied by reduction in required computational resources.
+    The results challenge the presumption that depth is a prerequisite for high performance, and demonstrate instead that data-centric refinement can deliver competitive accuracy with substantially lower computational cost.
+    The study contributes are producible framework for aligning model complexity with data characteristics, and advances the case for data-centric, efficiency-aware evaluation in modern image classification.
+
+- name: "Sizalobuhle Ncube"
+  project_title: "A particle swarm optimisation-based Maximum-Margin Classifier"
+  summary: >
+    The research develops a particle swarm optimisation-based maximum-margin classifier that addresses the computational and theoretical limitations of quadratic programming used in training support vector machines.
+    Conventional training in the primal or dual form requires strict convexity, satisfaction of the Karush-Kuhn-Tucker conditions, and clean, balanced data.
+    In practice, real-world datasets often contain noise, class imbalance, and high dimensionality, which increase computational cost and reduce the reliability of quadratic program-ming solvers.
+    To reduce computational effort and focus optimisation on informative samples, the procedure is restricted to Tomek link pairs located near class boundaries.
+    The removal of redundant and non-support vectors lowers the effective problem dimensionality and improves margin estimation, which yields more stable and generalisable decision boundaries.
+    The framework is extended to non-linear classification through kernel functions, such as radial basis function and polynomial kernels, which implicitly map data into higher-dimensional feature spaces to model complex decision surfaces under class overlap and noise.
+    Experiments on seven benchmark datasets and four synthetic datasets show that the proposed classifier achieves classification accuracy and F1 scores comparable to, or exceeding, those of support vector ma-chines trained using quadratic programming.
+    Although the method requires greater computational resources due to iterative fitness evaluations, it provides a flexible, solver-free alternative that avoids assumptions of convexity, differentiability, and dual formulation.
