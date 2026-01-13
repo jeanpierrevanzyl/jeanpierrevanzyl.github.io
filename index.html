@@ -1,3 +1,7 @@
+---
+layout: null
+---
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -44,6 +48,7 @@
 
   <!-- ======= Header ======= -->
   <header id="header">
+    {% include header.html %}
   </header>
   <!-- End Header -->
 
@@ -659,6 +664,7 @@
 
   <!-- ======= Footer ======= -->
   <footer id="footer">
+    {% include footer.html %}
   </footer>
   <!-- End  Footer -->
 
@@ -679,11 +685,6 @@
 
   <!-- Template Main JS File -->
   <script src="/assets/js/main.js"></script>
-
-  <script>
-    $("#header").load("/html/header.html");
-    $("#footer").load("/html/footer.html");
-  </script>
 
 </body>
 

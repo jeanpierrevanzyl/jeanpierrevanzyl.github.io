@@ -5,21 +5,38 @@
 * License: https://bootstrapmade.com/license/
 */
 
+
+/* Root stuff */
+:root {
+  /* Colors */
+  --primary-color: #149ddd;       /* The bright blue used for links and icons */
+  --primary-hover: #37b3ed;       /* The lighter blue used for hover states */
+  --secondary-color: #173b6c;     /* The dark blue used for section titles */
+  --bg-dark: #040b14;             /* The near-black used for the sidebar/header */
+  --bg-light: #f5f8fd;            /* The light gray used for section backgrounds */
+  --text-main: #272829;           /* The main body text color */
+  
+  /* Fonts */
+  --font-body: "Open Sans", sans-serif;
+  --font-heading: "Raleway", sans-serif;
+  --font-special: "Poppins", sans-serif;
+}
+
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
 body {
-  font-family: "Open Sans", sans-serif;
-  color: #272829;
+  font-family: var(--font-body);
+  color: var(--text-main);
 }
 
 a {
-  color: #149ddd;
+  color: var(--primary-color);
   text-decoration: none;
 }
 
 a:hover {
-  color: #37b3ed;
+  color: var(--primary-hover);
   text-decoration: none;
 }
 
@@ -29,7 +46,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Raleway", sans-serif;
+  font-family: var(--font-heading);
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -49,7 +66,7 @@ h6 {
   border-radius: 50px;
   right: 15px;
   bottom: 15px;
-  background: #149ddd;
+  background: var(--primary-color);
   color: #fff;
   transition: display 0.5s ease-in-out;
   z-index: 99999;
@@ -81,7 +98,7 @@ h6 {
   z-index: 9997;
   transition: all 0.5s;
   padding: 0 15px;
-  background: #040b14;
+  background: var(--bg-dark);
   overflow-y: auto;
 }
 
@@ -100,7 +117,7 @@ h6 {
   font-weight: 600;
   -moz-text-align-last: center;
   text-align-last: center;
-  font-family: "Poppins", sans-serif;
+  font-family: var(--font-special);
 }
 
 #header .profile h1 a,
@@ -125,7 +142,7 @@ h6 {
 }
 
 #header .profile .social-links a:hover {
-  background: #149ddd;
+  background: var(--primary-color);
   color: #fff;
   text-decoration: none;
 }
@@ -190,7 +207,7 @@ h6 {
 .nav-menu a:hover i,
 .nav-menu .active>a i,
 .nav-menu li:hover>a i {
-  color: #149ddd;
+  color: var(--primary-color);
 }
 
 /* Mobile Navigation */
@@ -210,7 +227,7 @@ h6 {
 }
 
 .mobile-nav-toggle i {
-  color: #149ddd;
+  color: var(--primary-color);
 }
 
 .mobile-nav-active {
@@ -264,14 +281,14 @@ h6 {
   color: #fff;
   margin-bottom: 50px;
   font-size: 26px;
-  font-family: "Poppins", sans-serif;
+  font-family: var(--font-special);
 }
 
 #hero p span {
   color: #fff;
   padding-bottom: 4px;
   letter-spacing: 1px;
-  border-bottom: 3px solid #149ddd;
+  border-bottom: 3px solid var(--primary-color);
 }
 
 @media (min-width: 1024px) {
@@ -302,7 +319,7 @@ section {
 }
 
 .section-bg {
-  background: #f5f8fd;
+  background: var(--bg-light);
 }
 
 .section-title {
@@ -315,7 +332,7 @@ section {
   margin-bottom: 20px;
   padding-bottom: 20px;
   position: relative;
-  color: #173b6c;
+  color: var(--secondary-color);
 }
 
 .section-title h2::after {
@@ -324,7 +341,7 @@ section {
   display: block;
   width: 50px;
   height: 3px;
-  background: #149ddd;
+  background: var(--primary-color);
   bottom: 0;
   left: 0;
 }
@@ -339,7 +356,7 @@ section {
 .about .content h3 {
   font-weight: 700;
   font-size: 26px;
-  color: #173b6c;
+  color: var(--secondary-color);
 }
 
 .about .content ul {
@@ -354,7 +371,7 @@ section {
 .about .content ul i {
   font-size: 20px;
   padding-right: 2px;
-  color: #149ddd;
+  color: var(--primary-color);
 }
 
 .about .content p:last-child {
@@ -376,7 +393,7 @@ section {
 .facts .count-box i {
   display: block;
   font-size: 44px;
-  color: #149ddd;
+  color: var(--primary-color);
   float: left;
 }
 
@@ -392,7 +409,7 @@ section {
 .facts .count-box p {
   padding: 15px 0 0 0;
   margin: 0 0 0 60px;
-  font-family: "Raleway", sans-serif;
+  font-family: var(--font-heading);
   font-size: 14px;
   color: #122f57;
 }
@@ -403,7 +420,7 @@ section {
   margin-top: 20px;
   color: #122f57;
   font-size: 15px;
-  font-family: "Poppins", sans-serif;
+  font-family: var(--font-special);
   transition: ease-in-out 0.3s;
 }
 
@@ -427,7 +444,7 @@ section {
   text-transform: uppercase;
   display: block;
   font-weight: 600;
-  font-family: "Poppins", sans-serif;
+  font-family: var(--font-special);
   color: #050d18;
 }
 
@@ -445,7 +462,7 @@ section {
   width: 1px;
   height: 10px;
   transition: .9s;
-  background-color: #149ddd;
+  background-color: var(--primary-color);
 }
 
 /*--------------------------------------------------------------
@@ -471,7 +488,7 @@ section {
   font-size: 18px;
   font-weight: 600;
   text-transform: uppercase;
-  font-family: "Poppins", sans-serif;
+  font-family: var(--font-special);
   color: #050d18;
   margin-bottom: 10px;
 }
@@ -538,14 +555,14 @@ section {
   font-weight: 600;
   line-height: 1;
   text-transform: uppercase;
-  color: #272829;
+  color: var(--text-main);
   margin-bottom: 5px;
   transition: all 0.3s ease-in-out;
 }
 
 .portfolio #portfolio-flters li:hover,
 .portfolio #portfolio-flters li.filter-active {
-  color: #149ddd;
+  color: var(--primary-color);
 }
 
 .portfolio #portfolio-flters li:last-child {
@@ -598,7 +615,7 @@ section {
 }
 
 .portfolio .portfolio-wrap .portfolio-links a+a {
-  border-left: 1px solid #37b3ed;
+  border-left: 1px solid var(--primary-hover);
 }
 
 .portfolio .portfolio-wrap:hover::before {
@@ -628,10 +645,10 @@ section {
   justify-content: center;
   width: 54px;
   height: 54px;
-  background: #149ddd;
+  background: var(--primary-color);
   border-radius: 50%;
   transition: 0.5s;
-  border: 1px solid #149ddd;
+  border: 1px solid var(--primary-color);
 }
 
 .services .icon i {
@@ -644,7 +661,7 @@ section {
 }
 
 .services .icon-box:hover .icon i {
-  color: #149ddd;
+  color: var(--primary-color);
 }
 
 .services .title {
@@ -659,7 +676,7 @@ section {
 }
 
 .services .title a:hover {
-  color: #149ddd;
+  color: var(--primary-color);
 }
 
 .services .description {
@@ -779,7 +796,7 @@ section {
 
 .contact .info i {
   font-size: 20px;
-  color: #149ddd;
+  color: var(--primary-color);
   float: left;
   width: 44px;
   height: 44px;
@@ -803,7 +820,7 @@ section {
   padding: 0 0 10px 60px;
   margin-bottom: 20px;
   font-size: 14px;
-  color: #173b6c;
+  color: var(--secondary-color);
 }
 
 .contact .info .email p {
@@ -830,14 +847,14 @@ section {
 }
 
 .contact .info .social-links a:hover {
-  background: #149ddd;
+  background: var(--primary-color);
   color: #fff;
 }
 
 .contact .info .email:hover i,
 .contact .info .address:hover i,
 .contact .info .phone:hover i {
-  background: #149ddd;
+  background: var(--primary-color);
   color: #fff;
 }
 
@@ -926,7 +943,7 @@ section {
 }
 
 .contact .php-email-form button[type="submit"] {
-  background: #149ddd;
+  background: var(--primary-color);
   border: 0;
   padding: 10px 24px;
   color: #fff;
@@ -935,7 +952,7 @@ section {
 }
 
 .contact .php-email-form button[type="submit"]:hover {
-  background: #37b3ed;
+  background: var(--primary-hover);
 }
 
 @-webkit-keyframes animate-loading {
@@ -1106,7 +1123,7 @@ section {
   bottom: 0;
   width: 300px;
   z-index: 9999;
-  background: #040b14;
+  background: var(--bg-dark);
 }
 
 #footer .copyright {
@@ -1228,7 +1245,7 @@ section {
   position: relative;
   /* Required for z-index to work */
   z-index: 1000;
-  color: #149ddd;
+  color: var(--primary-color);
   text-decoration: none;
   cursor: pointer;
   display: inline-block;
