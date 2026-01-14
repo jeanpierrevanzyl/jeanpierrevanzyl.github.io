@@ -1,12 +1,16 @@
+- name: "Data Science"
+  percentage: 100
+- name: "Machine Learning"
+  percentage: 100
 - name: "Particle Swarm Optimisation"
-  percentage: 90
-- name: "Genetic Programming"
-  percentage: 60
+  percentage: 100
+- name: "Polynomail Approximation"
+  percentage: 100
 - name: "Combinatorial Optimisation"
-  percentage: 85
+  percentage: 100
 - name: "Neural Networks"
-  percentage: 80
+  percentage: 100
 - name: "Rule Induction"
-  percentage: 80
+  percentage: 100
 - name: "Quantum Mechanics"
-  percentage: 15
+  percentage: 100

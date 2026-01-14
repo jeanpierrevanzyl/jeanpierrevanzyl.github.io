@@ -365,6 +365,8 @@ section {
 }
 
 .about .content ul li {
+  display: flex;
+  align-items: flex-start;
   padding-bottom: 10px;
 }
 
@@ -741,6 +743,9 @@ section {
   margin-bottom: 35px;
   border-radius: 6px;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  /* To make it scrollable */
+  height: clamp(150px, 50vh, 350px);
+  overflow-y: auto;
 }
 
 .testimonials .testimonial-item p::after {
