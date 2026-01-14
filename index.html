@@ -170,7 +170,8 @@ title: Home
         <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
           {% for skill in site.data.skills offset: mid %}
           <div class="progress">
-            <span class="skill">{{ skill.name }} <i class="val">{{ skill.percentage }}%</i></span>
+            <!-- <span class="skill">{{ skill.name }} <i class="val">{{ skill.percentage }}%</i></span> -->
+            <span class="skill">{{ skill.name }} <i class="val"></i></span>
             <div class="progress-bar-wrap">
               <div class="progress-bar" role="progressbar" aria-valuenow="{{ skill.percentage }}" aria-valuemin="0"
                 aria-valuemax="100">
