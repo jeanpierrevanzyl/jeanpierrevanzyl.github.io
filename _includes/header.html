@@ -9,6 +9,15 @@
             <a href="{{ site.social.github }}" class="github"><i class="bx bxl-github"></i></a>
             <a href="{{ site.social.scholar }}" class="scholar"><i class="bx bx-edit"></i></a>
         </div>
+
+        {% if site.data.scholar %}
+        <div class="text-center mt-3 text-light" style="font-size: 0.9rem;">
+            <span><i class="bx bx-stats"></i> Citations: <strong>{{ site.data.scholar.citations }}</strong></span>
+            <!-- <br> -->
+            <span><i class="bx bx-bar-chart"></i> h-index: <strong>{{ site.data.scholar.h_index }}</strong></span>
+        </div>
+        {% endif %}
+
     </div>
 
     <nav class="nav-menu">

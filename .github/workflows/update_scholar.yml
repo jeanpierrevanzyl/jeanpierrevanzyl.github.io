@@ -1,0 +1,28 @@
+name: Update Scholar Metrics
+
+on:
+  schedule:
+    - cron: '0 0 * * 0' # Runs once a week (Sunday at midnight UTC)
+  workflow_dispatch: # Allows you to run it manually from the Actions tab
+
+jobs:
+  update-data:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Run scraper
+        run: python fetch_citations.py
+
+      - name: Commit and push if changed
+        run: |
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "actions@github.com"
+          git add _data/scholar.yml
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Auto-update Scholar metrics" && git push)
