@@ -1,3 +1,9 @@
+- title: "Set-based particle swarm optimisation convergence"
+  pdf_link: "/assets/documents/sbpso-converge.pdf"
+  description: "The shortcomings of the set-based particle swarm optimisation algorithm are outlined, and non-convergence is proved theoretically."
+  publisher_url: "https://link.springer.com/article/10.1007/s11721-026-00262-9"
+  publisher_name: "Springer Swarm Intelligence"
+
 - title: "Closed-Form Expressions for the Normalizing Constants of the Mallows Model and Weighted Mallows Model on Combinatorial Domains"
   pdf_link: "/assets/documents/mallows-model.pdf"
   description: "This paper expands the Mallows model for use in combinatorial domains by deriving closed-form expressions for the normalizing constant of the distribution under various discrepancy functions, calculable in constant time."
